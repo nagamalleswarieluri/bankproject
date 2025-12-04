@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bank Account Simulation</title>
+    <link rel="stylesheet" href="bank.css">
+</head>
+<body>
+
+    <h1>SBI Bank Account</h1>
+
+    <div class="nav">
+        <button onclick="showSection('home')">Home</button>
+        <button onclick="showSection('deposit')">Deposit</button>
+        <button onclick="showSection('withdraw')">Withdraw</button>
+        <button onclick="showSection('balance')">Check Balance</button>
+    </div>
+
+    <!-- Home Section -->
+    <section id="home" class="page-section">
+        <h2>Welcome to SBI Bank</h2>
+        <p>Create your virtual bank account!</p>
+    </section>
+
+    <!-- Deposit -->
+    <section id="deposit" class="page-section hidden">
+        <h2>Deposit Money</h2>
+        <input type="number" id="depositAmount" placeholder="Enter amount">
+        <button onclick="depositMoney()">Deposit</button>
+    </section>
+
+    <!-- Withdraw -->
+    <section id="withdraw" class="page-section hidden">
+        <h2>Withdraw Money</h2>
+        <input type="number" id="withdrawAmount" placeholder="Enter amount">
+        <button onclick="withdrawMoney()">Withdraw</button>
+    </section>
+
+    <!-- Balance -->
+    <section id="balance" class="page-section hidden">
+        <h2>Account Balance</h2>
+        <p id="balanceDisplay">Your balance: ₹0</p>
+    </section>
+
+    <script src="bank.js"></script>
+</body>
+</html>
