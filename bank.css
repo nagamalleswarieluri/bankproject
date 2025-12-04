@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f5f5f5;
+}
+
+h1 {
+    background: #00518f;
+    color: white;
+    padding: 15px;
+}
+
+.nav button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.nav button:hover {
+    background: #0056b3;
+}
+
+.page-section {
+    background: white;
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px gray;
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+    width: 60%;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
